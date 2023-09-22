@@ -1,5 +1,24 @@
 # Classes
 names:
-  0: bottle
-  1: hat
-  2: shirt
+  0: Hoodie
+  1: Jacket
+  2: Mid-lenght dress
+  3: Pants
+  4: Shirt
+  5: coat
+  6: dress
+  7: fabric
+  8: jacket
+  9: jean
+  10: m2m
+  11: plain
+  12: shirt
+  13: short
+  14: shorts
+  15: skirt
+  16: slacks
+  17: suit
+  18: sweat
+  19: tie
+  20: tracksuit
+  21: tshirt
