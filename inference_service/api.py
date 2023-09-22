@@ -59,7 +59,7 @@ async def predictions(file: UploadFile = File(...)):
         print(class_number)
         print(classes)
         detection = Detection(box=box, 
-            cValue=COUPON_VALUE[class_number], class_=classes[class_number], label=classes[class_number].capitalize(), score=raw_detection[4])
+            cValue=None, class_=classes[class_number], label=classes[class_number].capitalize(), score=raw_detection[4])
         print(detection)
         result.detections.append(detection)
     return result
