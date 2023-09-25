@@ -47,6 +47,7 @@ class ort_v5:
         inputs[0].shape.extend([1, 3, 640, 640])
         arr = im.flatten()
         inputs[0].contents.fp32_contents.extend(arr)
+        print(inputs)
 
         # request building
         request = grpc_predict_v2_pb2.ModelInferRequest()
