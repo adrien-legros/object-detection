@@ -55,7 +55,11 @@ class ort_v5:
 
         # Call the gRPC server and get the response
         try:
+            start_inf = time.time()
             response = self.stub.ModelInfer(request)
+            end_inf = time.time()
+            inference_time = end_inf - start_inf
+            print("Inference time: {inference_time}")
         except grpc.RpcError as e:
             if e.code() == StatusCode.UNAVAILABLE:
                 raise Exception("Failed to connect to gRPC server")
